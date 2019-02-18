@@ -3,6 +3,7 @@ System operacyjny w środowisku sieciowym
 
 Charakterystyka systemu operacyjnego
 ------------------------------------
+ifconfig
 
 | Charakterystyka | wartość           | komentarzu |
 | ------------- |:-------------:| -----:|
@@ -15,11 +16,11 @@ Konfiguracja połączenia sieciowego
 
 | Parametr | wartość           | komentarzu |
 | ------------- |:-------------:| -----:|
-| Adres IP      | XX.XX.XX.XX | przydzielony przez DHCP |
-| Maska podsieci      |  |  |
-| Brama      |  |  |
-| DNS 1      |  |  |
-| DNS 2      |  |  |
+| Adres IP      | 10.0.0.17 | przydzielony przez DHCP |
+| Maska podsieci      | 255.255.255.0 |  |
+| Brama      | 10.0.2.16 |  |
+| DNS 1      | 10.0.2.4 |  |
+| DNS 2      | 10.0.2.8 |  |
 
 Schemat sieci
 -------------
