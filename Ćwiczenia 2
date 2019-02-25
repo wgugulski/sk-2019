@@ -21,9 +21,9 @@ Wejściowe parametry sieci
 
 Weryfikacja połączenia
 
+
 Polecenie
-```
-```
+
 
 Efekt
 ```
@@ -67,6 +67,9 @@ Nowa statyczna konfiguracja
 
 Weryfikacja połączenia
 
+nmcli
+ifup enp0s3
+
 Polecenie
 ```
 ```
@@ -82,10 +85,10 @@ Warto wiedzieć
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 | Lokalizacja pliku z konfiguracją sieci| | |
-| UP -> Wyłączenie interfejsu sieciowego| | |
-| DOWN -> Włączenie interfejsu sieciowego| | |
-| Sprawdzenie obecnych parametrów | | |
-| lista wszystkich interfejsów | | |
+| UP -> Wyłączenie interfejsu sieciowego|ifup enp0s3 | |
+| DOWN -> Włączenie interfejsu sieciowego|ifdown enp0s3 | |
+| Sprawdzenie obecnych parametrów |ip a |ifconfig |
+| lista wszystkich interfejsów |ip a |nmcli |
 | Które interfejsy jakie porty słuchają | | |
 
 if a
