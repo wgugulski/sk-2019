@@ -58,12 +58,12 @@ Nowa statyczna konfiguracja
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  
-| IP - address  |  | |
-| MASKA  |  | |
+| IP - address  | 10.0.2.15 | |
+| MASKA  | 255.255.255.0 | |
 |   |  | |
 | PC 2  |  | |
-| IP - address  |  | |
-| MASKA  |  | |
+| IP - address  | 10.0.2.4 | |
+| MASKA  | 255.255.255.0 | |
 
 Weryfikacja połączenia
 
@@ -92,3 +92,4 @@ if a
 nmcli
 ifup enp0s3
 ifdown enp0s3
+curl -X POST -d symuluje działanie przeglądaski
