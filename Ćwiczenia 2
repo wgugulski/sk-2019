@@ -88,3 +88,7 @@ Warto wiedzieć
 | lista wszystkich interfejsów | | |
 | Które interfejsy jakie porty słuchają | | |
 
+if a
+nmcli
+ifup enp0s3
+ifdown enp0s3
