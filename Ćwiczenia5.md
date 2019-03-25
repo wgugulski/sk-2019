@@ -38,6 +38,18 @@ routing
 | ``192.168.0.192/27`` | 192.168.0.193 | enp0s10 |
 
 
+
+pli ze statyczną konfiguracją
+wchodzimy source /etc/network/interfaces.d/*
+allow-hotplug enp0s3
+auto enp0s3
+interface enp0s3 inet static
+          adress 192.168.100.1
+          netmask 255.255.255.0
+auto enp0s8 inet static
+          adress 192.168.200.1
+          netmask 255.255.255.0
+          up ip route add 192.168.0.0/24 via 192.168.200.2
 Zadanie
 ------------
 
