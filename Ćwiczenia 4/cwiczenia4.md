@@ -47,7 +47,7 @@ Zadanie
 
 Zadanie do domu
 ---------------
-![alt schemat](a.jpg)
+![alt schemat](domowe4.png)
 
 1. Przygotuj konfigurację z zadania 1 wykorzystując inny system operacyjny na komputerze pełniącym rolę routera.
   * debian -> centos lub centos -> debian
