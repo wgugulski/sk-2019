@@ -12,7 +12,7 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    
 Adresacja
 ---------
-!(zadanie8.png)
+![Ćwiczenia 8 - exam](zadanie8.png)
 
 
 Sieci
