@@ -12,6 +12,8 @@ Zaproponuj rozwiązanie spełniające poniższe wymagania:
    
 Adresacja
 ---------
+!(zadanie8.png)
+
 
 Sieci
 ---------
@@ -40,6 +42,5 @@ ip route add default via ``adres`` - ustawienie gatewaya dla PC0 i PC1
 sysctl net.ipv4.ip_forward=``1`` - włączene IP forwardigu, który umożliwi komunikację PC1 <-> PC2  
 iptables -t nat -A POSTROUTING -o ``nazwa urządzenia`` -j MASQUERADE - umożliwi udostępnianie internetu dla PC1 i PC2  
 pico /etc/resolv.conf - zmiana DNS na ``8.8.8.8`` i ``8.8.4.4`` (sugerowane przez Google)  
-
 
  
