@@ -36,11 +36,11 @@ PC2
  
 Użyte komendy
 ---------
-ip link set ``nazwa urządzenia`` up - "podniesienie" urządzenia  
-ip addr add ``adres`` dev ``nazwa urządzenia`` - dodanie adresu do urządzenia  
-ip route add default via ``adres`` - ustawienie gatewaya dla PC0 i PC1  
-sysctl net.ipv4.ip_forward=``1`` - włączene IP forwardigu, który umożliwi komunikację PC1 <-> PC2  
-iptables -t nat -A POSTROUTING -o ``nazwa urządzenia`` -j MASQUERADE - umożliwi udostępnianie internetu dla PC1 i PC2  
+ip link set ``nazwa urządzenia`` up - Służy do podniesienia urządzenia 
+ip addr add ``adres`` dev ``nazwa urządzenia`` - Dodanie adresu do urządzenia  
+ip route add default via ``adres`` - Ustawienie 'defaultowego' gatewaya dla PC0 i PC1  
+sysctl net.ipv4.ip_forward=``1`` - Włączene IP forwardigu, który umożliwi komunikację PC1 <-> PC2  
+iptables -t nat -A POSTROUTING -o ``nazwa urządzenia`` -j MASQUERADE - Umożliwi udostępnianie internetu dla PC1 i PC2  
 pico /etc/resolv.conf - zmiana DNS na ``8.8.8.8`` i ``8.8.4.4`` (sugerowane przez Google)  
 
  
