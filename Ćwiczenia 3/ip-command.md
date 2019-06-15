@@ -50,9 +50,7 @@ Zadanie
    * Zweryfkuj połączenie kożystając z przeglądarki, odwiedzając graficzny interfejs ``HTTP CHAT`` pod adresem ``http://172.16.100.10:8888``
    * Przygotuj dokumentację pisemno obrazkową z wykonania zadania w formacie ``markdown`` zamieść ją w serwisie ``github.com`` obok obocnego tematu ``cwiczenia-3``
    
-![zadanie 3](1.png)
-![zadanie 3](2.png)
-![zadanie 3](3.png)
+![zadanie trzy](zad3.png)
 
 
 
