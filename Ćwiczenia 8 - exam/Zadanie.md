@@ -36,6 +36,32 @@ PC2
  
 Użyte komendy
 ---------
+Karta do internetu ustawiona jako pierwsza
+
+Podniesienie interfejsu
+ip link set dev interfejs up
+
+Nadanie adresu IP danemu interfejsowi sieciowemu
+ip addr add adres dev interfejs
+
+Ustawianie gatewaya dla PC1 i PC2, adres = IP PC0, ustawiamy w PC1, PC2
+ip route add default via adres 
+
+Włączenie IP forwardigu, ustawiamy w PC0
+sysctl -w net.ipv4.ip_forward=1 
+
+Umożliwia udostępnianie internetu dla PC1 i PC2 (ustawiamy w PC0)
+iptables -t nat -A POSTROUTING -o interfejs z połączeniem do internetu -j MASQUERADE 
+
+Ustawianie DNSów Googlowskich
+pico /etc/resolv.conf - zmiana DNS w PC1 i PC2 na 8.8.8.8 i 8.8.4.4 (domyślne)
+
+
+
+
+
+
+
 ip link set ``nazwa urządzenia`` up - Służy do podniesienia urządzenia 
 ip addr add ``adres`` dev ``nazwa urządzenia`` - Dodanie adresu do urządzenia  
 ip route add default via ``adres`` - Ustawienie 'defaultowego' gatewaya dla PC0 i PC1  
