@@ -55,18 +55,3 @@ iptables -t nat -A POSTROUTING -o interfejs z połączeniem do internetu -j MASQ
 
 Ustawianie DNSów Googlowskich
 pico /etc/resolv.conf - zmiana DNS w PC1 i PC2 na 8.8.8.8 i 8.8.4.4 (domyślne)
-
-
-
-
-
-
-
-ip link set ``nazwa urządzenia`` up - Służy do podniesienia urządzenia 
-ip addr add ``adres`` dev ``nazwa urządzenia`` - Dodanie adresu do urządzenia  
-ip route add default via ``adres`` - Ustawienie 'defaultowego' gatewaya dla PC0 i PC1  
-sysctl net.ipv4.ip_forward=``1`` - Włączene IP forwardigu, który umożliwi komunikację PC1 <-> PC2  
-iptables -t nat -A POSTROUTING -o ``nazwa urządzenia`` -j MASQUERADE - Umożliwi udostępnianie internetu dla PC1 i PC2  
-pico /etc/resolv.conf - zmiana DNS na ``8.8.8.8`` i ``8.8.4.4`` (sugerowane przez Google)  
-
- 
